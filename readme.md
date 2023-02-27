@@ -22,8 +22,6 @@
      b) Also, implement a factory function createJambScores() that takes eng, govt, lit, crk as arguments. Then create an object representing Muse’s JAMB scores. Add the object as a property to Musa object you created above in (a) above
 
 4. What are the different ways you can clone an object? Give examples for each of them.
-    ###### CHECK SOLUTION BELOW
-    
     
 5. As Nigeria goes to the polls, here is an object representing some of the Presidential Candidates:
 

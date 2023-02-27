@@ -49,9 +49,33 @@ function createJambScores(eng, govt, lit, crk) {
 const musaJambScores = createJambScores(70, 85, 82, 94);
 
 //question 4
+let my_obj = {
+  name: "rahma",
+  age: 23,
+};
+function cloneObject1() {
+  //1 using the for in loop
+  let my_newObj = {};
+  for (let key in my_obj) {
+    my_newObj[key] = my_obj[key];
+    console.log(my_newObj);
+  }
+}
+cloneObject1();
 
-//CHECK README.MD FILE
+function cloneObject2() {
+  //using object.assign();
+  let my_newObj2 = Object.assign({}, my_obj);
+  console.log(my_newObj2);
+}
+cloneObject2();
 
+function cloneObject3() {
+  //using spread operator
+  let my_newObj3 = { ...my_obj };
+  console.log(my_newObj3);
+}
+cloneObject3();
 //question 5
 
 const presidentialCandidates = {
@@ -73,14 +97,12 @@ function candidateInfo() {
 candidateInfo();
 
 // using for of loop
-console.log('--------------USING FOR LOOP----------------')
+console.log("--------------USING FOR LOOP----------------");
 
 function candidateInfo2() {
-    for (let party2 of Object.keys(presidentialCandidates)) {
-        let partyCandidate2 = `${presidentialCandidates[party2]} is the candidate of ${party2}`;
-        console.log(partyCandidate2)
-        
-    };
-    
+  for (let party2 of Object.keys(presidentialCandidates)) {
+    let partyCandidate2 = `${presidentialCandidates[party2]} is the candidate of ${party2}`;
+    console.log(partyCandidate2);
+  }
 }
-candidateInfo2()
+candidateInfo2();
