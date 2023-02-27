@@ -1,4 +1,4 @@
-##OBJECTS ASSIGNMENT
+## OBJECTS ASSIGNMENT
 *For this assignment, create a folder and name it ‘objects’. Create an ‘index.js’ file and put all your answers in there. Separate your answers using comments. Push your work into a GitHub repository and submit the Github repository link in Citrone.*
 
      1. Using the constructor method, create an InstagramPost() constructor function that takes the properties below as arguments
