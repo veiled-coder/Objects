@@ -42,6 +42,5 @@
 
     ```
     Omoyele Sowore is the presidential candidate of AAC
-    
     ```
 
