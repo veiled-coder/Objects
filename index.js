@@ -5,7 +5,7 @@ function InstagramPost(authorHandle, content, img, views, likes) {
   this.noOfViews = views;
   this.noOfLikes = likes;
 }
-console.log("happy");
+
 //question 2
 
 const rahmaPost = new InstagramPost(
@@ -15,6 +15,7 @@ const rahmaPost = new InstagramPost(
   200,
   499
 );
+console.log(rahmaPost);
 
 const mubajjalPost = new InstagramPost(
   "@dulfattah1",
@@ -23,7 +24,7 @@ const mubajjalPost = new InstagramPost(
   500,
   299
 );
-
+console.log(mubajjalPost)
 //question 3a
 
 function createPerson(name, age, location) {
@@ -35,7 +36,7 @@ function createPerson(name, age, location) {
 }
 
 const musa = createPerson("Musa Dawodu", 19, "Lekki,Lagos State");
-
+console.log(musa)
 //question 3b
 
 function createJambScores(eng, govt, lit, crk) {
@@ -47,7 +48,7 @@ function createJambScores(eng, govt, lit, crk) {
 }
 
 const musaJambScores = createJambScores(70, 85, 82, 94);
-
+console.log(musaJambScores)
 //question 4
 let my_obj = {
   name: "rahma",
