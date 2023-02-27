@@ -5,7 +5,7 @@ function InstagramPost(authorHandle, content, img, views, likes) {
   this.noOfViews = views;
   this.noOfLikes = likes;
 }
-
+console.log("happy");
 //question 2
 
 const rahmaPost = new InstagramPost(
@@ -27,29 +27,60 @@ const mubajjalPost = new InstagramPost(
 //question 3a
 
 function createPerson(name, age, location) {
-    return {
-        myName:name,
-        myAge:age,
-        myLocation: location,
-    }
+  return {
+    myName: name,
+    myAge: age,
+    myLocation: location,
+  };
 }
 
-const musa = createPerson('Musa Dawodu', 19, 'Lekki,Lagos State');
-
+const musa = createPerson("Musa Dawodu", 19, "Lekki,Lagos State");
 
 //question 3b
 
-
 function createJambScores(eng, govt, lit, crk) {
-    return {
-        engScore: eng,
-        govtScore: govt,
-        litSCore:lit
-    }
+  return {
+    engScore: eng,
+    govtScore: govt,
+    litSCore: lit,
+  };
 }
 
 const musaJambScores = createJambScores(70, 85, 82, 94);
 
 //question 4
 
-//check readme.md file for ans
+//CHECK README.MD FILE
+
+//question 5
+
+const presidentialCandidates = {
+  AAC: "Omoyele Sowore",
+  ACCORD: "Christopher Imumolen",
+  APC: "Bola Ahmed Tinubu",
+  LP: "Peter Obi",
+  NNPP: "Rabiu Kwankwaso",
+  PDP: "Atiku Abubakar",
+};
+//using for in loop
+function candidateInfo() {
+  for (let party in presidentialCandidates) {
+    let partyCandidate = `${presidentialCandidates[party]} is the candidate of ${party}`;
+    console.log(partyCandidate);
+  }
+}
+
+candidateInfo();
+
+// using for of loop
+console.log('--------------USING FOR LOOP----------------')
+
+function candidateInfo2() {
+    for (let party2 of Object.keys(presidentialCandidates)) {
+        let partyCandidate2 = `${presidentialCandidates[party2]} is the candidate of ${party2}`;
+        console.log(partyCandidate2)
+        
+    };
+    
+}
+candidateInfo2()

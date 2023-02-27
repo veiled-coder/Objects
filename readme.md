@@ -23,6 +23,8 @@
 
 4. What are the different ways you can clone an object? Give examples for each of them.
 
+###### CHECK SOLUTION BELOW
+
 5. As Nigeria goes to the polls, here is an object representing some of the Presidential Candidates:
 
      ```
@@ -36,3 +38,10 @@
     }
 
    ```      
+Using any of the enumeration methods taught in class (for…in  or for..of), log out each of the presidential candidates in this format:
+
+```
+Omoyele Sowore is the presidential candidate of AAC
+    
+```
+
